@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/3203ea8d-33a2-4ba6-8d44-7d8a77e4860a/resourceGroups/vlk-rg/providers/Microsoft.Web/sites/maxant-vlk",
+    "appService.deploySubpath": "."
+}
