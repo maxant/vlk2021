@@ -1,5 +1,106 @@
 <html>
+    <head>
+        <title>The Banana Art Web</title>
+        <style>
+            body {
+                color: white;
+                background-color: black;
+            }
+        </style>
+
+        <script>
+            function like(e, filename) {
+                fetch("/api/sendToDiscord/" + filename)
+                e.disabled = true;
+            }
+        </script>
+
+    </head>
     <body>
-        boo - here!
+        <h2 style="color: yellow;">I'm a banana!</h2>
+
+        Hi, this is my website - please browse my artwork and click the like button if you find them cool!
+        <br>
+        All images are copyright &copy; V. Kutschera 2021
+        <br>
+        <br>
+        <div class="a2a_kit a2a_kit_size_32 a2a_default_style" data-a2a-url="https://maxant-vlk.azurewebsites.net/" data-a2a-title="The Banana Art Web">
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_whatsapp"></a>
+            <a class="a2a_button_pinterest"></a>
+            <a class="a2a_button_reddit"></a>
+            <a class="a2a_button_facebook_messenger"></a>
+        </div>
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+        <br>
+        <table>
+            <tr>
+                <td><img src="anime-drawing-thing.jpeg" /></td>
+                <td>
+                    This picture is called "Anime drawing thing" and I'm very proud of it, especially the shading.
+                    My OCs name is Blossom and everything I used was from a <a href='https://scrawlrbox.uk/' target='_blank'>Scrawlrbox</a>.
+                    <br>
+                    <button onclick="like(this, 'anime-drawing-thing')">&#x1F44D;</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="attempt-of-hot-naruto.jpeg" /></td>
+                <td>
+                    I called this illustration "Attempt of hot Naruto" and it was an attempt to make his not as boxy
+                    and look handsome.
+                    <br>
+                    <button onclick="like(this, 'attempt-of-hot-naruto')">&#x1F44D;</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="first-manual-anime-drawing.jpeg" /></td>
+                <td>
+                    This is the first anime drawing I have done manually. I'm a self taught artist and so
+                    I'm very proud of this being my very first anime drawing. Her name is Nina.
+                    <br>
+                    <button onclick="like(this, 'first-manual-anime-drawing')">&#x1F44D;</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="spring-trap-aka-william-afton.jpeg" /></td>
+                <td>
+                    This is some fanaf fan art of Spring Trap, a.k.a. William Afton and how he got trapped in the 
+                    spring lock suit and died.
+                    <br>
+                    <button onclick="like(this, 'spring-trap-aka-william-afton')">&#x1F44D;</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="self-concious-sketch.jpeg" /></td>
+                <td>
+                    This is a drawing of a self concious girl and the imagination getting the worst of her.
+                    She's imagining all her class mates making fun of her when she's trying to do a presentation,
+                    including her crush. She doesn't yet have a name, and I'm not done yet.
+                    <br>
+                    <button onclick="like(this, 'self-concious-sketch')">&#x1F44D;</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="strawberry-cow-shoto.jpeg" /></td>
+                <td>
+                    I made it so that Shoto got hit by a strawberry cow quirk and for some reason decided
+                    to make him shirtless. Again it some fan art.
+                    <br>
+                    <button onclick="like(this, 'strawberry-cow-shoto')">&#x1F44D;</button>
+                </td>
+            </tr>
+            <tr>
+                <td><img src="video-game-character-designs.jpeg" /></td>
+                <td>
+                    These are some random video game character designs because one of my dreams is to make
+                    a video game with the help of my dad for the programming and I would do the drawing.
+                    <br>
+                    <button onclick="like(this, 'video-game-character-designs')">&#x1F44D;</button>
+                </td>
+            </tr>
+        </table>
+
     </body>
 </html>
