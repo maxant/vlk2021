@@ -3,7 +3,12 @@
 ## Development
 
     npm install nodemon -g
+
+    # running with hot deploy
     nodemon server.js
+
+    # debugging
+    nodemon --inspect server.js
 
 ## Run
 
